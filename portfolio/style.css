@@ -1,0 +1,164 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+}
+body{
+    background-color:#282a36 ;
+    font-family: 'Source Code Pro', monospace;
+    /* usar 400 e 700 */
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.close{
+    color: #ff5555;
+}
+.header-contacts a{
+    text-decoration: none;
+    color: rgb(196, 196, 196);
+}
+header .left{
+    color: #6272a4;
+}
+nav{
+    color: rgb(196, 196, 196);
+    height: 100%;
+}
+nav .nav{
+    display:flex;
+    width:auto;
+    max-width: 1400px;
+    padding: 10px;
+    justify-content:center;
+}
+nav .name{
+    color: #50fa7b;
+    font-weight: 400;
+    font-size: 2.2em;
+    display: flex;
+    line-height: 40px;
+    overflow: hidden;
+    position: relative;
+}
+nav .nav-txt{
+    font-size: 1.5em;
+    color: #ff79c6;
+    margin-top: 5vh;
+    margin-bottom: 5.5vh;
+    margin-left: 20vw;
+}
+.name span::before,
+.name span::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top:0;
+    right: 0;
+    bottom: 0;
+}
+.name span::before{
+    background-color: #282a36;
+    border-left: 2px solid rgb(199, 199, 199);
+    animation: escrever 2s steps(29) forwards;
+}
+@keyframes escrever{
+    to {
+        left: 100%;
+    }
+}
+@keyframes bar{
+    0%{border-color: #282a36;}
+    40%{border-color: #282a36;}
+    50%{border-color: rgb(199, 199, 199);}
+    90%{border-color: rgb(199, 199, 199);}
+    100%{border-color: #282a36;}
+}
+.bar{
+    border-left: 2px solid rgb(199, 199, 199);
+    animation-name: bar;
+    animation-iteration-count: infinite;
+    animation-duration: 0.7s;
+}
+.about{
+    margin-top: 4%;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+}
+.profile{
+    display: none;
+}
+.profile-txt{
+    padding-right: 10%;
+    padding-left: 10%;
+}
+.about .profile-pic img{
+    height: 145px;
+    width: 145px;
+    border: #ff79c6 4px solid;
+    border-radius: 50%;
+}
+
+.menu{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    padding-top: 4vh;
+}
+
+.profile-selector{
+    transition: 0.3s;
+    height: 33vh;
+    width: 30vh;
+    cursor: pointer;
+    background-color: #44475a;
+    box-shadow: black 5px 5px;
+}
+
+.curriculo-selector{
+    transition: 0.3s;
+    height: 33vh;
+    width: 30vh;
+    cursor: pointer;
+    background-color: #44475a;
+    box-shadow: black 5px 5px;
+}
+
+.profile-selector:hover{
+    transition: 0.3s;
+    margin-top: 5px;
+    margin-left: 5px;
+    box-shadow: unset;
+}
+.curriculo-selector:hover{
+    transition: 0.3s;
+    margin-top: 5px;
+    margin-left: 5px;
+    box-shadow: unset;
+}
+.curriculo{
+    display: none;
+}
+.back{
+    transition: 0.3s;
+    display: block;
+    background-color: #ff5555;
+    color: rgb(199, 199, 199);
+    cursor: pointer;
+    width: fit-content;
+}
+.back:hover{
+    transition: 0.3s;
+    background-color: #fd2b2b;
+    color: white;
+}
+footer{
+    bottom: 0;
+    position: absolute;
+    font-size: 0.8em;
+    color: #f1fa8c;
+}
+footer a{
+    color: #f1fa8c;
+}
