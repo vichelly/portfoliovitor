@@ -88,6 +88,7 @@ nav .nav-txt{
 }
 .profile{
     display: none;
+    transition: all 0.3s;
 }
 .profile-txt{
     padding-right: 10%;
@@ -108,30 +109,47 @@ nav .nav-txt{
 }
 
 .profile-selector{
-    transition: 0.3s;
-    height: 33vh;
-    width: 30vh;
+    transition: all 0.3s;
+    display:flex ;
+    justify-content:space-around;
+    height: 20vh;
+    width: 20vh;
     cursor: pointer;
     background-color: #44475a;
     box-shadow: black 5px 5px;
 }
 
 .curriculo-selector{
-    transition: 0.3s;
-    height: 33vh;
-    width: 30vh;
+    transition: all 0.3s;
+    display:flex ;
+    justify-content:center;
+    height: 20vh;
+    width: 20vh;
     cursor: pointer;
     background-color: #44475a;
     box-shadow: black 5px 5px;
 }
 
+.curriculo-txt a{
+    text-decoration: none;
+    color: #50fa7b;
+}
+.curriculo-txt a:hover{
+    text-decoration: none;
+    color: #f1fa8c;
+}
+
 .profile-selector:hover{
+    display: flex;
+    justify-content:space-around;
     transition: 0.3s;
     margin-top: 5px;
     margin-left: 5px;
     box-shadow: unset;
 }
 .curriculo-selector:hover{
+    display:flex ;
+    justify-content:space-around;
     transition: 0.3s;
     margin-top: 5px;
     margin-left: 5px;
@@ -139,9 +157,10 @@ nav .nav-txt{
 }
 .curriculo{
     display: none;
+    transition: all 0.3s;
 }
 .back{
-    transition: 0.3s;
+    transition: all 0.3s;
     display: block;
     background-color: #ff5555;
     color: rgb(199, 199, 199);
@@ -149,13 +168,13 @@ nav .nav-txt{
     width: fit-content;
 }
 .back:hover{
-    transition: 0.3s;
+    transition: all 0.3s;
     background-color: #fd2b2b;
     color: white;
 }
 footer{
     bottom: 0;
-    position: absolute;
+    position: fixed;
     font-size: 0.8em;
     color: #f1fa8c;
 }
