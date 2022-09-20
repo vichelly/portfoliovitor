@@ -13,7 +13,7 @@ function showcurriculo(){
 }
 
 function back(){
-    selec(".menu").style.display = "flex";
+    selec(".menu").style.display = "block";
     selec(".curriculo").style.display = "none";
     selec(".profile").style.display = "none";
 }

@@ -29,7 +29,7 @@ nav .nav{
     display:flex;
     width:auto;
     max-width: 1400px;
-    padding: 10px;
+    padding: 0.4vh;
     justify-content:center;
 }
 nav .name{
@@ -95,35 +95,28 @@ nav .nav-txt{
     padding-left: 10%;
 }
 .about .profile-pic img{
-    height: 145px;
-    width: 145px;
+    max-height: 15vw;
+    max-width: 15vw;
     border: #ff79c6 4px solid;
     border-radius: 50%;
 }
 
 .menu{
     transition: all 0.3s;
-    display: flex;
     width: 100%;
-    justify-content: space-evenly;
     padding-top: 4vh;
 }
+.align{
+    display: flex;
+    justify-content: space-evenly;
+}
 
-.profile-selector{
+.profile-selector,
+.curriculo-selector{
+    color: #f8f8f2;
     transition: all 0.3s;
     display:flex ;
     justify-content:space-around;
-    height: 20vh;
-    width: 20vh;
-    cursor: pointer;
-    background-color: #44475a;
-    box-shadow: black 5px 5px;
-}
-
-.curriculo-selector{
-    transition: all 0.3s;
-    display:flex ;
-    justify-content:center;
     height: 20vh;
     width: 20vh;
     cursor: pointer;
@@ -140,25 +133,27 @@ nav .nav-txt{
     color: #f1fa8c;
 }
 
-.profile-selector:hover{
+.profile-selector:hover,
+.curriculo-selector:hover{
     display: flex;
     justify-content:space-around;
     transition: all 0.3s;
-    margin-top: 5px;
-    margin-left: 5px;
-    box-shadow: unset;
-}
-.curriculo-selector:hover{
-    display:flex ;
-    justify-content:space-around;
     transition: 0.3s;
-    margin-top: 5px;
-    margin-left: 5px;
+    transform: translate(5px 5px);
     box-shadow: unset;
 }
 .curriculo{
     display: none;
     transition: all 0.3s;
+}
+.curriculo-txt h1{
+    color: #f1fa8c;
+}
+.curriculo-txt h3{
+    color: #bd93f9;
+}
+footer{
+    background-color: #282a36;
 }
 .back{
     transition: all 0.3s;
@@ -182,8 +177,34 @@ footer{
 footer a{
     color: #f1fa8c;
 }
+.social{
+    padding-top: 10vh;
+    color: #ff79c6;
+}
+.social li{
+    color: #50fa7b;
+}
+.social a{
+    color: #50fa7b;
+    text-decoration: none;
+}
+.social a:hover{
+    color: #f1fa8c;
+}
 
 @media (max-width: 610px){
+    .profile-txt{
+        font-size: 0.8em;
+    }
+    .curriculo-txt{
+        font-size: 0.8em;
+    }
+    .about .profile-pic img{
+        max-height: 22vw;
+        max-width: 22vw;
+        border: #ff79c6 4px solid;
+        border-radius: 50%;
+    }
     .name span::before,
     .name span::after{
         display: none;
