@@ -1,16 +1,19 @@
+const selec = (el) => document.querySelector(el);
+
 function showprofile(){
-    document.querySelector(".menu").style.display = "none";
-    document.querySelector(".profile").style.display = "flex"
-    document.querySelector(".back").style.display = "block";
+
+    selec(".menu").style.display = "none";
+    selec(".profile").style.display = "flex"
+    selec(".back").style.display = "block";
 }
 function showcurriculo(){
-    document.querySelector(".menu").style.display = "none";
-    document.querySelector(".curriculo").style.display = "flex";
-    document.querySelector(".back").style.display = "block";
+    selec(".menu").style.display = "none";
+    selec(".curriculo").style.display = "flex";
+    selec(".back").style.display = "block";
 }
 
 function back(){
-    document.querySelector(".menu").style.display = "flex";
-    document.querySelector(".curriculo").style.display = "none";
-    document.querySelector(".profile").style.display = "none";
+    selec(".menu").style.display = "flex";
+    selec(".curriculo").style.display = "none";
+    selec(".profile").style.display = "none";
 }
