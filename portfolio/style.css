@@ -126,13 +126,28 @@ nav .nav-txt{
     color: #f8f8f2;
     transition: all 0.3s;
     display:flex ;
-    justify-content:space-around;
+    justify-content:center;
+    flex-direction: column;
     height: 27vh;
     width: 30vh;
     cursor: pointer;
     background-color: #44475a;
     box-shadow: black 5px 5px;
 }
+.certificados-selector div,
+.profile-selector div,
+.curriculo-selector div{
+    margin: auto;
+}
+.certificados-selector img,
+.profile-selector img,
+.curriculo-selector img{
+    height: 5vw;
+    width: 5vw;
+    min-width: 20px;
+    min-height: 20px;
+}
+
 
 .curriculo-txt a{
     text-decoration: none;
