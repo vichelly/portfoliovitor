@@ -8,6 +8,7 @@ body{
     /* usar 400 e 700 */
 }
 .header{
+    flex: 3;
     display: flex;
     justify-content: space-between;
 }
@@ -110,15 +111,24 @@ nav .nav-txt{
     display: flex;
     justify-content: space-evenly;
 }
+.align2{
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+}
+.certificados-selector{
+    justify-content: center;
+}
 
+.certificados-selector,
 .profile-selector,
 .curriculo-selector{
     color: #f8f8f2;
     transition: all 0.3s;
     display:flex ;
     justify-content:space-around;
-    height: 20vh;
-    width: 20vh;
+    height: 27vh;
+    width: 30vh;
     cursor: pointer;
     background-color: #44475a;
     box-shadow: black 5px 5px;
@@ -134,7 +144,8 @@ nav .nav-txt{
 }
 
 .profile-selector:hover,
-.curriculo-selector:hover{
+.curriculo-selector:hover,
+.certificados-selector:hover{
     display: flex;
     justify-content:space-around;
     transition: all 0.3s;
@@ -191,13 +202,45 @@ footer a{
 .social a:hover{
     color: #f1fa8c;
 }
+.certificados-base{
+    display: none;
+}
+.certificados{
+    display: grid;
+    grid-gap: 3%;
+    justify-content: center;
+    grid-template-areas: 
+        "c1 c2"
+        "c3 c4"
+    ;
+}
+.c1,.c2,.c3,.c4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 40vw;
+    width: 40vw;
+    background-color: rgba(7, 18, 44, 0.5);
+}
+.c-img{
+    background-image: url();
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+.c-image{
+    height: 30vw;
+    width: 40vw;
+    object-fit: contain;
+}
 
 @media (max-width: 610px){
-    .profile-txt{
-        font-size: 0.8em;
-    }
-    .curriculo-txt{
-        font-size: 0.8em;
+    nav .nav-txt{
+        font-size: 1em;
+        color: #ff79c6;
+        margin-top: 5vh;
+        margin-bottom: 5.5vh;
+        margin-left: 20vw;
     }
     .about .profile-pic img{
         max-height: 22vw;
@@ -219,27 +262,21 @@ footer a{
     .name span{
         font-size: 60%;
     }
+    .certificados-selector,
+    .curriculo-selector,
     .profile-selector{
         transition: all 0.3s;
         display:flex ;
         justify-content:space-around;
-        height: 13vh;
-        width: 13vh;
+        height: 15vh;
+        width: 15vh;
         cursor: pointer;
         background-color: #44475a;
         box-shadow: black 5px 5px;
+        font-size: 0.8em;
     }
-    
-    .curriculo-selector{
-        transition: all 0.3s;
-        display:flex ;
-        justify-content:center;
-        font-size: 13px;
-        height: 13vh;
-        width: 13vh;
-        cursor: pointer;
-        background-color: #44475a;
-        box-shadow: black 5px 5px;
+    .certify h2{
+        font-size: 0.8em;
     }
 
 }
