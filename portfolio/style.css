@@ -7,6 +7,24 @@ body{
     font-family: 'Source Code Pro', monospace;
     /* usar 400 e 700 */
 }
+
+/* scrollbar*/
+::-webkit-scrollbar{
+    width: .85em;
+}
+::-webkit-scrollbar-track{
+    background-color: #282a36;
+    margin-block: .5em;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #44475a;
+    border: .16em solid #292929;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: #3b3e50;
+}
+
+
 .header{
     flex: 3;
     display: flex;
@@ -134,20 +152,25 @@ nav .nav-txt{
     background-color: #44475a;
     box-shadow: black 5px 5px;
 }
+
 .certificados-selector div,
 .profile-selector div,
 .curriculo-selector div{
     margin: auto;
 }
 .certificados-selector img,
-.profile-selector img,
-.curriculo-selector img{
+.profile-selector img{
     height: 6vw;
     width: 5vw;
     min-width: 20px;
     min-height: 20px;
 }
-
+.curriculo-selector img{
+    height: 6vw;
+    width: 7vw;
+    min-width: 20px;
+    min-height: 20px;
+}
 
 .curriculo-txt a{
     text-decoration: none;
@@ -250,6 +273,9 @@ footer a{
 }
 
 @media (max-width: 610px){
+    ::-webkit-scrollbar{
+        width: 0;
+    }
     nav .nav-txt{
         font-size: 1em;
         color: #ff79c6;
