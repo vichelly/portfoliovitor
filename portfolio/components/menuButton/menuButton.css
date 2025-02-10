@@ -1,0 +1,43 @@
+.menu {
+    display: flex;
+    gap: 20px; 
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+}
+
+
+.menu-button {
+    width: 100%;
+    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 14px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    padding: 3px;
+    justify-content: space-between;
+    height: 100%;
+    gap: 5px;
+}
+
+.menu-button img {
+    width: 100px;
+    height: auto;
+}
+
+.menu-button:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 500px){
+    .menu{
+        flex-direction: column;
+    }
+    .menu-button{
+        max-width: 120px;
+    }
+}

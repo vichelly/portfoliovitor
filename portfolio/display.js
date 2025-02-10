@@ -17,7 +17,7 @@ function showcertificados(){
     selec(".back").style.display = "block";
 }
 function back(){
-    selec(".menu").style.display = "block";
+    selec(".menu").style.display = "flex";
     selec(".curriculo").style.display = "none";
     selec(".profile").style.display = "none";
     selec(".certificados-base").style.display = "none";

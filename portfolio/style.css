@@ -24,7 +24,19 @@ body{
     background-color: #3b3e50;
 }
 
-
+header{
+    display: flex;
+    z-index: 2;
+    position: fixed;
+    background-color:#282a36 ;
+    width: 100%;
+    top: 0px;
+}
+header .left{
+    color: #ff79c6;
+    cursor: pointer;
+    margin: 2px;
+}
 .header{
     flex: 3;
     display: flex;
@@ -37,9 +49,7 @@ body{
     text-decoration: none;
     color: rgb(196, 196, 196);
 }
-header .left{
-    color: #6272a4;
-}
+
 nav{
     color: rgb(196, 196, 196);
     height: 100%;
@@ -120,20 +130,7 @@ nav .nav-txt{
     border-radius: 50%;
 }
 
-.menu{
-    transition: all 0.3s;
-    width: 100%;
-    padding-top: 4vh;
-}
-.align{
-    display: flex;
-    justify-content: space-evenly;
-}
-.align2{
-    margin-top: 5%;
-    display: flex;
-    justify-content: center;
-}
+
 .certificados-selector{
     justify-content: center;
 }
