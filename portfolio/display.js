@@ -1,7 +1,6 @@
 const selec = (el) => document.querySelector(el);
 
 function showprofile(){
-
     selec(".menu").style.display = "none";
     selec(".profile").style.display = "flex";
     selec(".back").style.display = "block";
